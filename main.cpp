@@ -2,6 +2,8 @@
 
 using namespace std;
 
+#define ITERATIONS 9
+
 enum class TrafficLights
 {
     red,
@@ -43,7 +45,7 @@ int main()
 {
     TrafficLights tl = TrafficLights::green;
     cout << LightsType( tl) << endl;
-    for( int i = 0; i < 9; i ++)
+    for( int i = 0; i < ITERATIONS; i ++)
         cout << LightsType( ++tl) << endl;
     return 0;
 }
